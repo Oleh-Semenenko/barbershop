@@ -7,10 +7,10 @@
     <title>Barbershop</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/  modern-normalize/1.1.0/modern-normalize.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="header">
@@ -34,15 +34,18 @@
     </header>
 
     <main>
-
         <!-- Hero -->
 
         <section class="hero">
             <div class="container hero__container">
-                <ul class="hero__list">
-                    <li class="hero__item"><a href="https://www.instagram.com/" rel="noopener nofollow noreferrer" class="hero__link">Instagram</a></li>
-                    <li class="hero__item"><a href="https://www.youtube.com/" rel="noopener nofollow noreferrer" class="hero__link">Youtube</a></li>
-                </ul>
+                <div class="hero__soc">
+                    <ul class="hero__list">
+                        <li class="hero__item"><a href="https://www.instagram.com/" rel="noopener nofollow noreferrer"
+                                class="hero__link">Instagram</a></li>
+                        <li class="hero__item"><a href="https://www.youtube.com/" rel="noopener nofollow noreferrer"
+                                class="hero__link">Youtube</a></li>
+                    </ul>
+                </div>
                 
                 <div class="hero__content">
                     <p lang="en" class="top-text hero__top-text">A hair salon for men in Kyiv</p>
@@ -295,6 +298,20 @@
             <div class="container contacts-wrap__container">
                 <section class="online">
                     <h2 class="online__title">Онлайн-запись</h2>
+                    <form class="online__form">
+                        <div class="input-field">
+                            <input class="online__input" name="online-name" id="online-name" type="text" placeholder="">
+                            <label class="online__label" for="online-name">Имя*</label>
+                        </div>
+                        <div class="input-field">
+                            <input class="online__input" name="online-tel" id="online-tel" type="tel" placeholder="">
+                            <label class="online__label" for="online-tel">Телефон*</label>
+                        </div>
+                        <div class="text-field">
+                            <textarea name="online-mess" id="online-mess" class="online__mess" placeholder=""></textarea>
+                            <label class="online__label" for="online-mess">Сообщение</label>
+                        </div>
+                    </form>
                     <button type="button" class="button online__button">отправить</button>
                 </section>
                 
@@ -302,14 +319,14 @@
                     <h2 class="contacts__title">Контакты</h2>
                     <address class="address">
                         <ul class="address__list">
-                            <li class="address__item">
+                            <li class="address__item icon-address">
                                 <a href="https://goo.gl/maps/WsuB2JrLFHWemNAaA" target="_blank" rel="noopener nofollow noreferrer" class="address__link">ул.
                                     Васильковая, 7А<br />Киев, 08132</a>
                             </li>
-                            <li class="address__item">
+                            <li class="address__item icon-phone">
                                 <a href="tel:+380441111111" rel="noopener nofollow noreferrer" class="address__link">+38 044 111 11 11</a>
                             </li>
-                            <li class="address__item">
+                            <li class="address__item icon-mail">
                                 <a href="mailto:barbershop@email.com" rel="noopener nofollow noreferrer" class="address__link">barbershop@email.com</a>
                             </li>
                         </ul>

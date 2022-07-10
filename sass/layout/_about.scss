@@ -1,0 +1,58 @@
+.about__container {
+    display: flex;
+    padding-top: 140px;
+    padding-bottom: 120px;
+}
+
+.about__list {
+    display: flex;
+}
+
+.about__item {
+    max-width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.about__content {
+    margin-left: 65px;
+}
+
+.about__top-text {
+    color: var(--secondary-title-color);
+}
+
+.about__title {
+    color: var(--secondary-title-color);
+    margin-bottom: var(--typical-margin);
+
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.about__bottom-text {
+    color: var(--primary-text-color);
+    margin-bottom: var(--typical-margin);
+}
+
+.about__text {
+    color: var(--primary-text-color);
+    margin-bottom: 40px;
+
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+}
+
+.about__button {
+    color: var(--secondary-title-color);
+    transition: background-color 250ms linear, color 250ms linear;
+    
+    &:hover,
+    &:focus {
+        @extend %button-active;
+    }
+}
