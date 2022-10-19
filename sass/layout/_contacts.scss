@@ -80,9 +80,14 @@
     }
 }
 
+.online__input:hover + .online__label,
 .online__input:focus + .online__label,
 .online__input:placeholder-shown + .online__label {
     color: #ffffff;
+    transform: translateY(-100%);
+}
+
+.online__input:not(:placeholder-shown) + .online__label {
     transform: translateY(-100%);
 }
 
@@ -109,9 +114,14 @@
     }
 }
 
+.online__mess:hover + .online__label,
 .online__mess:focus + .online__label,
 .online__mess:placeholder-shown + .online__label {
     color: #ffffff;
+    transform: translateY(-100%);
+}
+
+.online__mess:not(:placeholder-shown) + .online__label {
     transform: translateY(-100%);
 }
 
