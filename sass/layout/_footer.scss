@@ -1,9 +1,13 @@
 .footer__container {
-    padding-top: 57px;
-    padding-bottom: 55px;
+    padding-top: 44px;
+    padding-bottom: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
 }
 
 .footer__text {
@@ -20,10 +24,19 @@
     align-items: center;
     margin-bottom: 0;
     color: var(--secondary-title-color);
+
+    &.top-text::before {
+        @include tablet {
+            margin-right: 40px;
+        }
+    }
 }
 
 .footer__item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: var(--typical-margin);
+    @include tablet {
+        margin-right: 40px;
+    }
 }
 
 .footer__link {

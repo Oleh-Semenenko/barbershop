@@ -1,21 +1,40 @@
 .contacts-wrap {
     background-color: #191c26;
     background-image: url(../images/contacts_bg.png);
-    background-size: calc(50% - 15px);
+    background-size: 767px 496px;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: left bottom;
     max-width: 1280px;
     margin: 0 auto;
+    @include tablet {
+        background-size: 1199px 449px;
+    }
+    @include desktop {
+        background-position: right;
+        background-size: calc(50% - 15px);
+    }
 }
 
 .contacts-wrap__container {
-    display: flex;
+    @include desktop {
+        display: flex;
+    }
 }
 
 .online {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    width: calc(50% + 15px);
+    text-align: center;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @include tablet {
+        text-align: start;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @include desktop {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        width: calc(50% + 15px);
+    }
 }
 
 .online__title {
@@ -30,17 +49,26 @@
 }
 
 .online__form {
-    display: flex;
-    flex-wrap: wrap;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .input-field {
+    margin-bottom: 44px;
     position: relative;
-    width: 265px;
-
-    &:first-child {
-        margin-right: 30px;
+    
+    @include tablet {
+        &:first-child {
+            margin-right: 30px;
+        }
+        width: 330px;
     }
+    @include desktop {
+        width: 265px;
+    }
+    
 }
 
 .online__input {
@@ -101,7 +129,7 @@
     resize: none;
     background-color: transparent;
     color: rgba(190, 193, 202, 0.8);
-    width: 560px;
+    width: 418px;
     height: 76px;
     border: none;
     border-bottom: 1px solid var(--label-color);
@@ -111,6 +139,13 @@
     &:hover,
     &:focus {
         border-color: #FFFFFF;
+    }
+
+    @include tablet {
+        width: 690px;
+    }
+    @include desktop {
+        width: 560px;
     }
 }
 
@@ -137,10 +172,24 @@
 }
 
 .contacts {
-    padding-top: 130px;
-    padding-bottom: 130px;
-    padding-left: 100px;
-    width: calc(50% - 15px);
+    padding-top: 84px;
+    padding-bottom: 84px;
+    width: 100%;
+    height: 496px;
+    text-align: center;
+    @include tablet {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: 449px;
+        text-align: start;
+    }
+    @include desktop {
+        padding-top: 130px;
+        padding-bottom: 130px;
+        padding-left: 100px;
+        width: calc(50% - 15px);
+        height: 100%;
+    }
 }
 
 .contacts__title {
@@ -155,7 +204,21 @@
 
 .address {
     font-style: normal;
-    margin-bottom: 70px;
+    margin-bottom: 44px;
+    @include tablet {
+        margin-bottom: 0;
+        width: 330px;
+    }
+    @include desktop {
+        margin-bottom: 70px;
+        width: 260px;
+    }
+}
+
+.address__wrap {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+    }
 }
 
 .address__item {
@@ -183,6 +246,12 @@
     color: var(--prices-color);
 }
 
+.hours {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-left: 30px;
+    }
+}
+
 .contacts__top-text {
     color: var(--main-title-color);
     margin-bottom: var(--typical-margin);
@@ -190,6 +259,10 @@
     &::before {
         background-color: rgba(157, 164, 189, 0.4);
     }
+}
+
+.contacts__bottom-text {
+    text-align: start
 }
 
 @include generateIcons($icons);

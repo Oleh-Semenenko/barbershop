@@ -5,21 +5,47 @@
 
 .benefits__container {
     display: flex;
+    flex-direction: column-reverse;
+    gap: 44px;
+    @include tablet {
+        flex-wrap: wrap-reverse;
+    }
+    @include desktop {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
 }
 
 .benefits__list {
-    width: 370px;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 130px;
+    width: 418px;
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+        width: 370px;
+        margin-right: 130px;
+        margin-left: 125px;
+    }
+    
 }
 
 .benefits__item {
-    box-sizing: border-box;
-    width: 170px;
+    width: 194px;
     height: 133px;
     background-color: var(--secondary-background-color);
-    padding: 20px 24px;
+    padding: 20px 36px;
+    @include tablet {
+        width: 210px;
+        padding: 20px 44px;
+    }
+    @include desktop {
+        width: 170px;
+        padding: 20px 24px;
+    }
+    box-sizing: border-box;
 
     &:nth-child(odd) {
         margin-right: 30px;
