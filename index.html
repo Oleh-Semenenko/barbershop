@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <a href="/" class="logo">
-                <img src="./images/logo_opt.svg" alt="Лого">
+                <svg class="logo__icon" width="69" height="55">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
             </a>
             <nav class="nav">
                 <ul class="nav__list">
@@ -31,13 +33,67 @@
                 <a href="tel:+380441111111" class="connect__tel">+38 044 111 11 11</a>
                 <button type="button" class="button header__button">Онлайн-запись</button>
             </div>
+
+            <button type="button" class="mob-menu__open-btn">
+                <svg class="mob-menu__open-icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-open_btn"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+
+        <!-- <div class="backdrop is-hidden">
+            <div class="mob-menu">
+                <div class="container">
+                    <div class="mob-menu__top">
+                        <button type="button" class="mob-menu__close-btn">
+                            <svg class="close-btn__icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close_btn"></use>
+                            </svg>
+                        </button>
+                        <ul class="mob-menu__list">
+                            <li class="mob-menu__item">
+                                <a href="#" class="mob-menu__link">О нас</a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a href="#" class="mob-menu__link">Услуги и цены</a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a href="#" class="mob-menu__link">Мастера</a>
+                            </li>
+                            <li class="mob-menu__item">
+                                <a href="#" class="mob-menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="mob-menu__bottom">
+                        <div class="mob-connect">
+                            <a href="tel:+380441111111" class="mob-connect__tel">+38 044 111 11 11</a>
+                            <button type="button" class="button mob-connect__button">Онлайн-запись</button>
+                        </div>
+            
+                        <div class="mob-soc__wrap">
+                            <ul class="mob-soc__list">
+                                <li class="mob-soc__item">
+                                    <a href="https://www.instagram.com/" rel="noopener nofollow noreferrer"
+                                        class="mob-soc__link">Instagram</a>
+                                </li>
+                                <li class="mob-soc__item">
+                                    <a href="https://www.youtube.com/" rel="noopener nofollow noreferrer"
+                                        class="mob-soc__link">Youtube</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </header>
 
     <main>
         <!-- Hero -->
 
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container hero__container">
                 <div class="hero__soc">
                     <ul class="hero__list">
@@ -56,11 +112,11 @@
                     <p class="bottom-text hero__bottom-text">Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- О нас -->
 
-        <!-- <section class="about">
+        <section class="about">
             <div class="container about__container">
                 <ul class="about__list">
                     <li class="about__item">
@@ -80,7 +136,7 @@
                     <button type="button" class="button about__button">Онлайн-запись</button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Услуги и цены -->
 
@@ -135,7 +191,7 @@
 
         <!-- Преимущества -->
 
-        <!-- <section class="benefits">
+        <section class="benefits">
             <div class="container benefits__container">
                 <ul class="benefits__list">
                     <li class="benefits__item" data-aos="zoom-in"
@@ -170,11 +226,11 @@
                     <p class="bottom-text benefits__bottom-text">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Наши мастера -->
 
-        <!-- <section class="masters">
+        <section class="masters">
             <div class="container">
                 <div class="masters__wrap">
                     <p class="top-text masters__top-text">для настоящих ценителей атмосферы</p>
@@ -295,11 +351,11 @@
                     </ul>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Галерея -->
 
-        <!-- <section class="gallery">
+        <section class="gallery">
             <div class="container">
                 <h2 class="gallery__title visually-hidden">Галерея</h2>
                 <p class="top-text gallery__text">На латинском языке “барба” означает “борода”</p>
@@ -310,11 +366,11 @@
                     <li class="grid__item"><img src="./images/gallery4.jpg" class="grid__img" alt="Барбер стрижет клиента"></li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- Контакты -->
 
-        <!-- <div class="contacts-wrap">
+        <div class="contacts-wrap">
             <div class="container contacts-wrap__container">
                 <section class="online">
                     <h2 class="online__title"
@@ -367,12 +423,12 @@
                     </div>
                 </section>
             </div>
-        </div> -->
+        </div>
     </main>
 
     <!-- Футер -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
             <p class="footer__text">&#xa9;Copyright 2020</p>
             <ul class="footer__list top-text">
@@ -380,7 +436,7 @@
                 <li class="footer__item"><a href="" target="_blank" rel="noopener nofollow noreferrer" class="footer__link">Youtube</a></li>
             </ul>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

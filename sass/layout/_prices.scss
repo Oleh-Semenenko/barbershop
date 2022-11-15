@@ -4,15 +4,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 84px 31px;
+    padding-top: 84px;
+    padding-bottom: 84px;
     margin: 0 auto;
     
     @include tablet {
-        padding: 100px 39px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     @include desktop {
-        padding: 130px 55px;
         min-width: 1280px;
+        padding-top: 130px;
+        padding-bottom: 130px;
     }
 }
 
@@ -70,10 +73,8 @@
     justify-content: space-between;
     align-items: baseline;
 
-    margin-bottom: var(--typical-margin);
-
-    &:last-child {
-        margin-bottom: 0;
+    &:not(:last-child) {
+        margin-bottom: var(--typical-margin);
     }
     &::before {
         content: "";

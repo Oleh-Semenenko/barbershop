@@ -1,11 +1,32 @@
 .hero__container {
-    display: flex;
+    width: 100%;
+    padding: 0;
+
+    @include mobile {
+        display: flex;
+    }
+
+    @include tablet {
+        min-width: 720px;
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+
+    @include desktop {
+        width: 1200px;
+    }
 }
 
 .hero__soc {
-    width: 90px;
-    display: flex;
-    align-items: flex-end;
+    display: none;
+    @include tablet {
+        width: 115px;
+        display: flex;
+        align-items: flex-end;
+    }
+    @include desktop {
+        width: 90px;
+    }
 }
 
 .hero__list {
@@ -35,9 +56,17 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-    padding: 272px 452px 206px 96px;
     flex-grow: 1;
+    padding-top: 208px;
+    padding-bottom: 183px;
+    padding-left: 31px;
+
+    @include tablet {
+        padding: 280px 157px 234px 70px;
+    }
+    @include desktop {
+        padding: 272px 452px 206px 96px;
+    };
 }
 
 .hero__link {
@@ -64,11 +93,26 @@
     margin-bottom: var(--typical-margin);
 
     font-family: "Raleway", sans-serif;
-    font-size: 72px;
-    line-height: 1.18;
+    font-size: 48px;
+    line-height: 1.17;
     letter-spacing: 0.05em;
+    @include desktop {
+        font-size: 72px;
+        line-height: 1.18;
+    }
 }
 
 .hero__bottom-text {
-    max-width: 400px;
+    font-size: 16px;
+    line-height: 1.62;
+    max-width: 306px;
+    @include tablet {
+        max-width: 349px;
+    }
+    @include desktop {
+        font-size: 18px;
+        line-height: 1.67;
+        max-width: 400px;
+    }
+    
 }
