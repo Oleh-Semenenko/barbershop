@@ -35,19 +35,19 @@
     
     &:first-child {
         @include tablet {
-            background: url(../../images/img1_tablet.jpg);
+            background: url(../images/img1_tablet.jpg);
         }
         @include desktop {
-            background: url(../../images/img1_desk.jpg);
+            background: url(../images/img1_desk.jpg);
         }
     }
     
     &:last-child {
         @include tablet {
-            background: url(../../images/img2_tablet.jpg);
+            background: url(../images/img2_tablet.jpg);
         }
         @include desktop {
-            background: url(../../images/img2_desk.jpg);
+            background: url(../images/img2_desk.jpg);
         }
     }
 }

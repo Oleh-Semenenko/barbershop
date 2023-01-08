@@ -44,6 +44,7 @@
 
 .masters__list {
     display: inline-block;
+    width: 418px;
     @include tablet {
         width: 450px;
     }
@@ -58,12 +59,12 @@
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    width: 418px;
+    max-width: 418px;
     @include tablet {
-        width: 450px;
+        max-width: 450px;
     }
     @include desktop {
-        width: 370px;
+        max-width: 370px;
     }
     &:not(:last-child) {
         margin-bottom: 64px;
