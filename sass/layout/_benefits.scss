@@ -25,7 +25,7 @@
         width: 450px;
     }
     @include desktop {
-        width: 370px;
+        min-width: 370px;
         margin-right: 130px;
         margin-left: 125px;
     }
@@ -93,11 +93,12 @@
 
 .benefits__top-text {
     color: var(--secondary-title-color);
+    max-width: 100%;
 }
 
 .benefits__title {
     color: var(--secondary-title-color);
-    max-width: 412px;
+    // max-width: 400px;
     margin-bottom: var(--typical-margin);
 
     font-family: "Raleway";
