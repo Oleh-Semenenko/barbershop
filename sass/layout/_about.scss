@@ -53,6 +53,7 @@
 }
 
 .about__content {
+    overflow: hidden;
     @include tablet {
         margin-left: 30px;
     }

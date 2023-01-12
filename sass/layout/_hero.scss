@@ -59,9 +59,8 @@
 	background-position: center;
 	background-size: cover;
 	flex-grow: 1;
-	padding-top: 208px;
-	padding-bottom: 183px;
-	padding-left: 31px;
+	padding: 208px 31px 183px;
+	overflow: hidden;
 
 	@include tablet {
 		padding: 280px 157px 234px 70px;
@@ -101,7 +100,6 @@
 	font-size: 48px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
-	// display: inline-block;
     @include tablet {
         display: block;
     }

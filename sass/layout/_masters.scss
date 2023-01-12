@@ -15,6 +15,7 @@
 }
 
 .masters__wrap {
+    overflow: hidden;
     margin: 0 auto;
     max-width: 418px;
     @include tablet {

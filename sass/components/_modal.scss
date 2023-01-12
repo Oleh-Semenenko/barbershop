@@ -1,4 +1,6 @@
 .modal {
+	overflow-y: scroll;
+	max-height: 90vh;
 	max-width: 450px;
 	@media screen and (max-width: 480px) {
 		width: 90%;

@@ -16,12 +16,17 @@
   color: var(--main-title-color);
 }
 
+html {
+  min-width: 480px;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 14px;
+  min-width: 480px;
 }
 
 .no-scroll {
@@ -257,6 +262,8 @@ a {
 }
 
 .modal {
+  overflow-y: scroll;
+  max-height: 90vh;
   max-width: 450px;
   padding: 40px;
   background-color: var(--primary-background-color);
@@ -464,6 +471,7 @@ a {
 
 .header {
   position: absolute;
+  min-width: 480px;
   width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -663,9 +671,8 @@ a {
   background-position: center;
   background-size: cover;
   flex-grow: 1;
-  padding-top: 208px;
-  padding-bottom: 183px;
-  padding-left: 31px;
+  padding: 208px 31px 183px;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .hero__content {
@@ -803,6 +810,9 @@ a {
   }
 }
 
+.about__content {
+  overflow: hidden;
+}
 @media screen and (min-width: 768px) {
   .about__content {
     margin-left: 30px;
@@ -880,6 +890,9 @@ a {
     padding-top: 130px;
     padding-bottom: 130px;
   }
+}
+.prices .container {
+  overflow: hidden;
 }
 
 .prices__title {
@@ -1092,6 +1105,10 @@ a {
   max-width: 500px;
 }
 
+.benefits__content {
+  overflow: hidden;
+}
+
 .masters {
   background-color: var(--secondary-background-color);
   padding-top: 84px;
@@ -1111,6 +1128,7 @@ a {
 }
 
 .masters__wrap {
+  overflow: hidden;
   margin: 0 auto;
   max-width: 418px;
 }
@@ -1321,6 +1339,7 @@ a {
 }
 
 .online {
+  overflow: hidden;
   text-align: center;
   padding-top: 84px;
   padding-bottom: 84px;
@@ -1462,6 +1481,7 @@ a {
   transition: background-color 250ms linear;
 }
 .contacts {
+  overflow: hidden;
   padding-top: 84px;
   padding-bottom: 84px;
   width: 100%;
