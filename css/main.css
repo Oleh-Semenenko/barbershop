@@ -262,7 +262,7 @@ a {
 }
 
 .modal {
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 90vh;
   max-width: 450px;
   padding: 40px;
